@@ -1,0 +1,8 @@
+{
+  "name": "ax-profile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "fffc1ec4"
+}

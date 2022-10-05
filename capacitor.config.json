@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "ax-profile",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
