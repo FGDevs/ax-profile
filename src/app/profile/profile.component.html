@@ -1,0 +1,173 @@
+<section class="head">
+
+  <div class="title">
+    <p>Akun</p>
+    <div class="icons">
+      <div class="icon">
+        <img  src="assets/icon/cart.svg" alt="" />
+        <div *ngIf="cart.length" class="notif">{{ cart.length }}</div>
+      </div>
+      <div class="icon">
+        <img  src="assets/icon/mail.svg" alt="" />
+        <div *ngIf="mail.length" class="notif">{{ mail.length }}</div>
+      </div>
+      <div class="icon">
+        <img  src="assets/icon/bell.svg" alt="" />
+        <div *ngIf="notification.length" class="notif">{{ notification.length }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="account">
+    <img [src]="user.imageUrl" alt="">
+    <div class="detail">
+      <p class="name">{{ user.name }}</p>
+      <p class="phone">{{ user.phone }}</p>
+    </div>
+  </div>
+  <div class="mission">
+    <div class="progress">
+      <div class="progress-track" [style]="progressStyle"></div>
+    </div>
+    <div class="detail">
+      <p>{{ missions.done }} dari {{ missions.total }} Misi Selesai</p>
+      <button>Lihat Semua</button>
+    </div>
+  </div>
+</section>
+
+<section class="stat">
+  <ul class="stats">
+    <li class="item">
+      <img src="assets/icon/coin.svg" alt="" />
+      <div>
+        <h4>Receh</h4>
+        <p>{{ user.receh }}</p>
+      </div>
+    </li>
+    <li class="item greyed">
+      <img src="assets/icon/promo.png" alt="" />
+      <div>
+        <h4>Voucher</h4>
+        <p>{{ user.voucher }}</p>
+      </div>
+    </li>
+    <li class="item greyed">
+      <img src="assets/icon/gift.png" alt="" />
+      <div>
+        <h4>Referal</h4>
+        <p>{{ user.referal }}</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section class="body">
+  <ul>
+    <li>
+      <div class="item">
+        <img src="assets/icon/user.svg" alt="" />
+        <div>
+          <h2>Profile Saya</h2>
+          <p>Atur Data Diri</p>
+        </div>
+      </div>
+      <div class="action">
+        <div class="notif">!</div>
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/card.svg" alt="" />
+        <div>
+          <h2>Aktivasi Fitur Pickup</h2>
+          <p>Atur Verifikasi Data Diri</p>
+        </div>
+      </div>
+      <div class="action">
+        <div class="notif">!</div>
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/address-1.svg" alt="" />
+        <div>
+          <h2>Alamat Pengirim</h2>
+          <p>Atur alamat pengirim</p>
+        </div>
+      </div>
+      <div class="action">
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/address-2.svg" alt="" />
+        <div>
+          <h2>Alamat Penerima</h2>
+          <p>Atur alamat penerima</p>
+        </div>
+      </div>
+      <div class="action">
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/lock.svg" alt="" />
+        <div>
+          <h2>Kata Sandi</h2>
+          <p>Atur kata sandi</p>
+        </div>
+      </div>
+      <div class="action">
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/link.svg" alt="" />
+        <div>
+          <h2>Akun Terhubung</h2>
+          <p>Atur akun yang terhubung</p>
+        </div>
+      </div>
+      <div class="action">
+        <div class="notif">!</div>
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+    <li>
+      <div class="item">
+        <img src="assets/icon/globe.svg" alt="" />
+        <div>
+          <h2>Bahasa</h2>
+          <p>Bahasa Indonesia</p>
+        </div>
+      </div>
+      <div class="action">
+        <button>
+          <ion-icon name="chevron-forward-outline"></ion-icon>
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="logout">
+    <img src="assets/icon/logout.svg" alt="" />
+    <p>Keluar</p>
+  </div>
+</section>

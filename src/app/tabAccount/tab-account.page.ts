@@ -3,11 +3,11 @@ import { ActivatedRoute } from '@angular/router';
 import { TabDataKey } from 'src/interfaces';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'tab1.page.html',
-  styleUrls: ['tab1.page.scss']
+  selector: 'app-tab-account',
+  templateUrl: 'tab-account.page.html',
+  styleUrls: ['tab-account.page.scss']
 })
-export class Tab1Page {
+export class TabAccountPage {
   public title: string;
 
   constructor(private route: ActivatedRoute) {
